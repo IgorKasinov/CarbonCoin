@@ -1,15 +1,15 @@
 pragma solidity ^0.4.21;
 
 
-contract CRBToken {
+contract GPMCarbon {
     // Public variables of the token
-    // Start preICO
-    // price $1.5
-    // ICO
-    // price $3
+    // Start pre ICO 28.05.19
+    // price $0,15
+    // Start ICO 16.07.19 
+    // price $0,3
     address public owner;
-    string public name = "CRB Token";
-    string public symbol = "CRB";
+    string public name = "GPMCarbon";
+    string public symbol = "GPM";
     uint8 public decimals = 18;
     bool public frozen;
     uint256 public totalSupply = 18000000 * 10 ** uint256(decimals);
@@ -30,7 +30,7 @@ contract CRBToken {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    function CRBToken() public {
+    function GPMCarbon() public {
         balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
         owner = msg.sender;
         frozen = true;
