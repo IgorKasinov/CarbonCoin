@@ -1,14 +1,14 @@
 pragma solidity ^0.4.21;
 
 
-contract GPMCarbon {
+contract GPMCoin {
     // Public variables of the token
     // Start pre ICO 28.05.19
     // price $0,15
     // Start ICO 16.07.19 
     // price $0,3
     address public owner;
-    string public name = "GPMCarbon";
+    string public name = "GPMCoin";
     string public symbol = "GPM";
     uint8 public decimals = 18;
     bool public frozen;
@@ -30,7 +30,7 @@ contract GPMCarbon {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    function GPMCarbon() public {
+    function GPMCoin() public {
         balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
         owner = msg.sender;
         frozen = true;
